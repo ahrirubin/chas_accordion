@@ -1,12 +1,58 @@
-html {
-  background: #f2f1f4;
-  color: #19171c;
+
+.header{
+  text-align: center;
+  color: #eee;
+  font-size: 50px;
 }
+
+
+html {
+  background: #333;
+  color: #19171c;
+
+}
+
 
 .description{
   display: none;
 }
 
-.active + div.description{
+
+.title.active  .description{
+  background-color: #eee;
+  border-top: 1px solid lightgray;
   display: block;
+  padding: 30px 30px;
 }
+
+
+#faq{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.title {
+  text-align: left;
+  background-color: #eee;
+  border-bottom: 1px solid gray;
+  width: 500px;
+  margin: auto;
+  transition: background-color .3s;
+}
+
+
+.titleText{
+  padding: 30px 30px;
+}
+
+
+.title:hover{
+  background-color: #ccc;
+}
+
+
+
+
+
+
